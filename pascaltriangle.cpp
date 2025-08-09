@@ -24,3 +24,9 @@ int main(){
         cout<<"\n";
     }
 }
+
+
+
+// follow ups
+// get particular element(element at index) from pascal triangle
+ 
