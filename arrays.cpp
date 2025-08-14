@@ -35,6 +35,22 @@ int missingNum(vector<int> &arr)
     return currSum;
 }
 
+
+int maxDepth(string s) {
+        int n=s.size();
+        int maxDepth=0;
+        int depth=0;
+        for(int i=0;i<n;i++){
+            if(s[i]=='(')depth++;
+            else if(s[i]==')') {
+                maxDepth=max(maxDepth,depth);
+                depth--;
+            }
+        }
+        return maxDepth;
+    }
+
+    
 int main()
 {
     int n;
